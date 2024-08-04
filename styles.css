@@ -1,0 +1,77 @@
+/* Custom Menu Button Styles */
+.menu-btn {
+    position: absolute;
+    z-index: 3;
+    right: 35px;
+    top: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-btn .btn-line {
+    width: 28px;
+    height: 2px;
+    background: #F8F8F8;
+    border-radius: 3px;
+    position: absolute;
+    transition: all 0.6s ease-out;
+}
+
+.menu-btn .btn-line::before,
+.menu-btn .btn-line::after {
+    content: '';
+    width: 28px;
+    height: 2px;
+    background: #F8F8F8;
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    transition: all 0.6s ease-out;
+}
+
+.menu-btn .btn-line::before {
+    top: -7px; 
+}
+
+.menu-btn .btn-line::after {
+    top: 7px; /* Aligns the bottom line */
+}
+
+.menu-btn.open .btn-line {
+    background: transparent;
+}
+
+.menu-btn.open .btn-line::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.menu-btn.open .btn-line::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+/* Menu visibility */
+.menu {
+    display: none;
+    transition: all 0.6s ease-out;
+}
+
+.menu.show {
+    display: block;
+}
+
+/* Fix logo position when menu is open */
+.menu.show ~ .navbar-brand {
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    z-index: 2;
+}
