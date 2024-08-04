@@ -5,8 +5,13 @@
     --lightGrey: #b4b1b1;
     --bgGrey: rgb(219, 219, 219);
     --whtColor: #f2f5f7;
-
 }
+
+/* Padding between sections */
+section {
+    padding: 60px 0;
+}
+
 /* Custom Menu Button Styles */
 .menu-btn {
     position: absolute;
@@ -108,6 +113,7 @@
     top: 15px;
     z-index: 2;
 }
+
 /*Card styles */
 .card-container {
     display: flex;
@@ -116,27 +122,32 @@
     flex-wrap: wrap; 
     gap: 1.5rem; 
 }
+
 .card {
     flex: 1;
     max-width: 300px; 
 }
+
 .card.right {
     text-align: right; 
 }
+
 .card.middle {
     margin: 0 auto; 
 }
+
 .card.left {
     text-align: left; 
 }
 
+/*Section 6 styles */
 /*Section 6 styles */
 .rectangle {
     width: 1200px;
     height: 500px; /* Adjust height as needed */
     background-color: grey;
     position: absolute;
-    top: 1980px; /* Adjust top value to align with squares */
+    top: 2480px; /* Adjust top value to align with squares */
     left: 30px;
     z-index: -1; 
     align-self: center;
@@ -149,38 +160,38 @@
 }
 
 .square-1 {
-    top: 1800px;
+    top: 2400px;
     left: 0;
     background-color: var(--secondary);
 }
 
 .square-2 {
-    top: 1900px;
+    top: 2500px;
     left: 16.66%; /* 1/6th of the page width */
     background-color: var(--whtColor);
 }
 
 .square-3 {
-    top: 2000px;
+    top: 2600px;
     left: 33.33%; /* 2/6th of the page width */
     background-color: var(--secondary);
 }
 
 .square-4 {
-    top: 2100px;
+    top: 2700px;
     left: 50%; /* 3/6th or 1/2 of the page width */
     background-color: var(--whtColor);
     
 }
 
 .square-5 {
-    top: 2200px;
+    top: 2800px;
     left: 66.66%; /* 4/6th of the page width */
     background-color: var(--secondary);
 }
 
 .square-6 {
-    top: 2275px;
+    top: 2875px;
     left: 83.33%; /* 5/6th of the page width */
     background-color: var(--whtColor);
     width: 190px;
