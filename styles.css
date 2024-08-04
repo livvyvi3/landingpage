@@ -1,3 +1,10 @@
+/*Variables*/
+:root {
+    --primary: #849698;
+    --secondary: #242c2d;
+    --lightGrey: #777777;
+
+}
 /* Custom Menu Button Styles */
 .menu-btn {
     position: absolute;
@@ -65,7 +72,31 @@
 }
 
 .menu.show {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    position: absolute;
+    top: 70px; 
+    right: 35px; 
+    background: #343a40; 
+    padding: 15px; 
+    z-index: 2; 
+}
+
+.menu-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+}
+
+.menu-nav .nav-item {
+    margin: 10px 0; 
+}
+
+.menu-nav .nav-link {
+    color: #F8F8F8;
+    text-decoration: none; 
 }
 
 /* Fix logo position when menu is open */
@@ -74,4 +105,25 @@
     left: 15px;
     top: 15px;
     z-index: 2;
+}
+/*Card styles */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+    gap: 1.5rem; 
+}
+.card {
+    flex: 1;
+    max-width: 300px; 
+}
+.card.right {
+    text-align: right; 
+}
+.card.middle {
+    margin: 0 auto; 
+}
+.card.left {
+    text-align: left; 
 }
