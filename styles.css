@@ -8,6 +8,7 @@
 }
 body{
     background-color: var(--bgGrey);
+   
 }
 
 body::before {
@@ -19,17 +20,56 @@ body::before {
 section {
     padding: 60px 0;
 }
-/*Section 1*/
-#section1 {
-    text-align: center;
-  }
-  #section1 h3,
-  #section1 h1,
-  #section1 p {
-    margin: 0 auto;
-  }
 
-/* Custom Menu Button Styles */
+
+.navbar-nav .nav-item {
+    margin: 0; 
+}
+
+.navbar-nav .nav-link {
+    padding: 0; 
+}
+
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem; 
+}
+
+.menu {
+    top: 0;
+    right: 0; 
+}
+.menu-nav .nav-item {
+    margin: 0;
+}
+.menu.show {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    position: absolute;
+    top: 58px; 
+    right: 35px; 
+    background: #212529; 
+    padding: 15px; 
+    z-index: 2;
+    padding-right: 2em;
+}
+
+
+.menu.show ~ .navbar-brand {
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    z-index: 2;
+}
+
+.navbar:hover {
+    background-color: #333; 
+}
+.navbar {
+    transition: background-color 0.3s ease;
+    background-color: var(--whtColor);
+}
+
 .menu-btn {
     position: absolute;
     z-index: 3;
@@ -49,7 +89,7 @@ section {
 .menu-btn .btn-line {
     width: 28px;
     height: 2px;
-    background: var(--whtColor);
+    background: var(--bgGrey);
     border-radius: 3px;
     position: absolute;
     transition: all 0.6s ease-out;
@@ -60,7 +100,7 @@ section {
     content: '';
     width: 28px;
     height: 2px;
-    background: var(--whtColor);
+    background: var(--bgGrey);
     border-radius: 3px;
     position: absolute;
     left: 0;
@@ -95,17 +135,6 @@ section {
     transition: all 0.6s ease-out;
 }
 
-.menu.show {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; 
-    position: absolute;
-    top: 70px; 
-    right: 35px; 
-    background: #343a40; 
-    padding: 15px; 
-    z-index: 2; 
-}
 
 .menu-nav {
     list-style: none;
@@ -115,7 +144,7 @@ section {
 }
 
 .menu-nav .nav-item {
-    margin: 10px 0; 
+    margin:  0; 
 }
 
 .menu-nav .nav-link {
@@ -130,6 +159,32 @@ section {
     top: 15px;
     z-index: 2;
 }
+/*Section 1*/
+#section1 {
+    text-align: center;
+  }
+  #section1 h3,
+  #section1 h1,
+  #section1 p {
+    margin: 0 auto;
+  }
+  .limited-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 9em;
+}
+
+
+section {
+    margin-bottom: 60px; 
+}
+
+/* Section 4*/
+#section4 {
+    margin-bottom: 60px;
+}
 
 /*Card styles */
 .card-container {
@@ -137,7 +192,9 @@ section {
     justify-content: space-between;
     align-items: flex-start; 
     flex-wrap: wrap; 
-    gap: 1.5rem; 
+    gap: 1.5rem;    
+    justify-content: center; 
+    margin-bottom: 60px; 
 }
 
 .card {
@@ -167,10 +224,18 @@ section {
     background-color: var(--primary);
 }
 /*section 5*/
+#section5 {
+    margin-top: 20px; 
+}
+
 .btn-wht{
     color: var(--primary);
     background-color: var(--whtColor);
 }
+#section5 .card {
+    min-height: 300px; 
+}
+
 
 /*Section 6 styles */
 .rectangle {
@@ -181,8 +246,8 @@ section {
     left: 30px;
     z-index: -1; 
     align-self: center;
-    width: 350px;
-    height: 200px;
+    width: 1420px;
+    height: 500px;
 }
 .square {
     width: 300px;
