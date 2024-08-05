@@ -9,6 +9,12 @@
 body{
     background-color: var(--bgGrey);
 }
+
+body::before {
+    display: block;
+    content: '';
+    height: 0px;
+  }
 /* Padding between sections */
 section {
     padding: 60px 0;
@@ -150,22 +156,37 @@ section {
 .card.left {
     text-align: left; 
 }
-
+/*Section 2*/ 
+.section-rect{
+    width: 950px;
+    height: 390px;
+    background-color: var(--secondary);
+}
+.btn-prmry{
+    color: var(--whtColor);
+    background-color: var(--primary);
+}
+/*section 5*/
+.btn-wht{
+    color: var(--primary);
+    background-color: var(--whtColor);
+}
 
 /*Section 6 styles */
 .rectangle {
-    width: 1200px;
-    height: 500px; /* Adjust height as needed */
+    /* Adjust height as needed */
     background-color: grey;
     position: absolute;
     top: 2480px; 
     left: 30px;
     z-index: -1; 
     align-self: center;
+    width: 350px;
+    height: 200px;
 }
 .square {
-    width: 380px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     background-color: var(--whtColor);
     position: absolute;
 }
@@ -178,33 +199,31 @@ section {
 
 .square-2 {
     top: 2500px;
-    left: 16.66%; 
+    left: 6.66%; 
     background-color: var(--whtColor);
 }
 
 .square-3 {
     top: 2600px;
-    left: 33.33%; 
+    left: 23.33%; 
     background-color: var(--secondary);
 }
 
 .square-4 {
     top: 2700px;
-    left: 50%; 
+    left: 40%; 
     background-color: var(--whtColor);
     
 }
 
 .square-5 {
     top: 2800px;
-    left: 66.66%; 
+    left: 56.66%; 
     background-color: var(--secondary);
 }
 
 .square-6 {
     top: 2875px;
-    left: 83.33%; 
-    background-color: var(--whtColor);
-    width: 190px;
-    
+    left: 73.33%; 
+    background-color: var(--whtColor);    
 }
